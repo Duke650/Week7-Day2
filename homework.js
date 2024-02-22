@@ -109,3 +109,30 @@ const fetchData = async () => {
 }
 
 console.log(fetchData());
+
+// CodeWars
+
+// #1 Possibilities Array
+
+function isAllPossibilities(x){
+    let setArr = new Set(x)
+    console.log(setArr)
+    for (let i = 0; i < x.length; i++) {
+        if(!setArr.has(i)) {
+          return false
+        }
+    }
+    return true
+  
+  }
+
+  // # 2 Consecutive items
+
+  function consecutive(arr, a, b) {
+    for (let i = 0; i < arr.length; i++) {
+        if ((arr[i] === a && arr[i + 1] === b) || (arr[i] === b && arr[i + 1] === a)) {
+            return true
+        }
+    }
+    return false
+  }
